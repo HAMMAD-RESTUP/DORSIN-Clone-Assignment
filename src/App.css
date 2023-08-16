@@ -1,38 +1,300 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar */
+.is-sticky .navbar-custom {
+  margin-top: 0px;
+  padding: 10px 0px;
+  background-color: #272a33;
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-custom {
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-custom .logo {
+  color: #ffffff;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #272a33;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+}
+nav{
+  background: #00000070;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item{
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.nav-item:hover{
+  cursor: pointer;
+color: #a7a7a7;
+}
+
+/* home.js */
+
+ .home-half {
+  padding-bottom: 150px;
+  padding-top: 220px;
+}
+.bg-home {
+    height:500px;
+    background: url("http://dorsin.react.themesbrand.com/assets/images/bg-home.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+} 
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.bg-overlay {
+    background: linear-gradient(to right, #512da8, #711e72);
+    opacity: 0.9;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.text-white {
+  color: #ffffff !important;
+  position:absolute;
+  top: 150px;
+ 
+}
+
+.home-title {
+  font-size: 40px;
+  line-height: 64px;
+  font-family: "Poppins", sans-serif;
+}
+.home-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.play-shadow {
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 82px;
+  height: 82px;
+  margin: 20px auto;
+}
+.bg-pattern-effect {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.play-btn{
+  border-color: #fb3e3e !important;
+}
+.bg-pattern-effect img {
+  max-width: 100%;
+}
+
+
+
+
+/*  Services  */
+
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  padding-bottom: 1rem;
+  line-height: 1;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.section-title-border {
+  width: 50px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fb3e3e;
+}
+
+
+.section-subtitle {
+  letter-spacing: 0.02em;
+}
+p {
+    font-size: 14.4px;
+    line-height: 24px;
+}
+
+h4{
+  font-size: 18px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 50px 0;
+  background-color: #272a33;
+}
+.footer h4 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.footer .footer-list li a {
+  text-decoration: none;
+  color: #98a0aa;
+  padding-top: 8px;
+  display: inline-block;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+p{
+  color: #a7a7a7;
+}
+
+.footer-alt {
+  padding: 15px 0;
+  background-color: #2e313a;
+}
+.footer-alt .copy-rights {
+  margin-bottom: 0;
+  line-height: 36px;
+}
+
+
+/* Features */
+.features-box h3 {
+  margin-bottom: 25px;
+  margin-top: 0;
+  line-height: 36px;
+}
+p {
+  font-size: 14.4px;
+  line-height: 24px;
+}
+.features-box .features-item-list li {
+  position: relative;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 7px 0 7px 20px;
+}
+.features-box .features-item-list li:before {
+  content: "";
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+/* pricing */
+.pricing-box {
+  padding: 50px 40px 50px 40px;
+  border: 1px solid #ecf0f5;
+  border-radius: 8px;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1) !important;
+}
+.pricing-box h4 {
+  font-size: 15px;
+}
+.pricing-box h1 {
+  font-size: 36px;
+  padding-top: 5px;
+}
+h6 {
+  font-size: 12px;
+} 
+
+.text-danger{
+  color: #fb3e3e;
+}
+
+
+
+/* start */
+
+.bg-get-start {
+  background: url("http://dorsin.react.themesbrand.com/assets/images/img-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-lg {
+  padding: 100px 0;
+}
+.section-subtitle {
+  letter-spacing: 0.02em;
+}
+
+
+.section-title-border {
+  width: 50px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fb3e3e;
+}
+
+.btn-white {
+  background: #ffffff;
+  border-color: #ffffff !important;
 }
